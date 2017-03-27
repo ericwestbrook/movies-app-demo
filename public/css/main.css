@@ -52,12 +52,12 @@ body {
   padding: 0; }
 
 h1 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 6px; }
 
 h4 {
-  font-size: 22px;
+  font-size: 18px;
   margin: 12px 0 6px 0; }
 
 p {
@@ -237,21 +237,21 @@ p {
       width: 220px; }
   .movies__more-info__footer {
     bottom: 20px;
-    padding: 20px;
-    text-align: center;
-    width: calc(100% - 40px); }
+    padding: 20px 0;
+    text-align: center; }
     .movies__more-info__footer a {
       background: #21252c;
+      border-radius: 6px;
       color: #c2bfbf;
       display: inline-block;
-      margin: 0 20px 0 0;
-      padding: 20px;
+      margin: 0 5px 0 0;
+      padding: 10px;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
-      width: 30%; }
+      width: 40%; }
       .movies__more-info__footer a:nth-child(2) {
-        margin: 0 0 0 20px; }
+        margin: 0 0 0 5px; }
   .movies__more-info .close-button {
     display: block;
     position: absolute;
