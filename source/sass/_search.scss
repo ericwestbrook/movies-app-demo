@@ -16,9 +16,16 @@
     border-radius: $borders;
     color: $text-gray;
     display: block;
-    font-size: 32px;
+    font-size: 16px;
     height: calc(100% - 2px);
-    padding: 0 #{$padding / 2};
-    width: calc(100% - #{$padding + 2});
+    padding: 0 #{$padding / 2} 0 #{$padding * 2};
+    width: calc(100% - #{($padding * 2.5) + 2});
+  }
+
+  svg {
+    position: absolute;
+    left: 25px;
+    pointer-events: none;
+    top: 30px;
   }
 }

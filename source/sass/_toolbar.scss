@@ -7,24 +7,34 @@
   left: 0;
   padding: $padding;
   position: fixed;
-  width: calc(100% - #{$padding / 2});
+  width: calc(100% - #{$padding * 2});
 
   .dropdown {
     &__wrapper {
 
       &.false .dropdown__options {
         opacity: 0;
+        pointer-events: none;
       }
+    }
+
+    &__button {
+      background: $color-deep-blue-2;
+      border-radius: $borders;
+      display: block;
+      padding: #{$padding /2} $padding;
+      width: 110px;
     }
 
     &__options {
       background: $color-gray-3;
       border-radius: $borders;
       bottom: #{$header-height + $padding};
-      box-shadow: 0 0 60px $color-black-1;
+      box-shadow: 0 0 30px $color-black-1;
       padding: $padding 0;
       position: absolute;
       transition: opacity .5s;
+      width: 145px;
 
       li {
         padding: #{$padding / 2} $padding;
@@ -33,6 +43,23 @@
           background-color: $color-pink;
         }
       }
+    }
+  }
+
+  &__share {
+    position: absolute;
+    right: $padding;
+    text-align: right;
+    text-transform: uppercase;
+    top: $padding;
+
+    span, a {
+      margin-left: $padding;
+    }
+
+    span {
+      position: relative;
+      top: -5px;
     }
   }
 }

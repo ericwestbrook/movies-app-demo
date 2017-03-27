@@ -12,11 +12,16 @@ $color-deep-blue-2: #1b1e23;
 $text-gray: $color-gray-1;
 $border-gray: $color-gray-2;
 
-$padding: 40px;
+$color-twitter-blue: #55aecc;
+$color-facebook-blue: #3b5998;
+
+$padding: 20px;
 $borders: 6px;
 
-$search-height: 80px;
-$header-height: 140px;
+$search-height: 40px;
+$header-height: 70px;
+
+$desktop: 700px;
 
 @mixin bg-gradient($color-1, $color-2) {
   background: linear-gradient(to bottom, $color-1 0%, $color-2 100%);

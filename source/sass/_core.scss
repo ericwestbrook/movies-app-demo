@@ -5,33 +5,45 @@ body {
   background: $color-black-2;
   color: $text-gray;
   font-family: Helvetica;
-  font-size: 32px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 h4 {
-  font-size: 42px;
-  margin-bottom: 12px;
+  font-size: 22px;
+  margin: 12px 0 6px 0;
+}
+
+p {
+  line-height: 24px;
 }
 
 .rating {
-  border: 2px solid $color-black-2;
-  font-size: 28px;
+  border: 1px solid $color-black-2;
+  font-size: 14px;
   font-weight: bold;
   margin-left: $padding / 2;
-  padding: 0 2px;
+  padding: 0 1px;
   position: relative;
-  top: -4px;
+  top: -2px;
 }
 
 .clear-float {
   clear: both;
   float: none;
+}
+
+.twitter {
+  fill: $color-twitter-blue;
+}
+
+.facebook {
+  fill: $color-facebook-blue;
 }

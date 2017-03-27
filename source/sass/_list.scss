@@ -39,12 +39,13 @@
 
       .path {
         fill: $color-white;
+        stroke: $color-pink;
+        transition: fill .3s, stroke .3s;
       }
 
-      .line {
-        stroke: blue;
-        stroke-width: 10;
-        opacity: 1;
+      .true .path {
+        fill: $color-pink;
+        stroke: $color-white;
       }
     }
 
@@ -79,5 +80,27 @@
 
   .movies__poster {
     display: none;
+  }
+
+  @media (min-width: $desktop) {
+    .movies__list__item {
+      height: auto;
+
+      &__love {
+        left: 160px;
+        top: 85px;
+      }
+
+      &__details {
+        left: 160px;
+        position: absolute;
+        top: $padding;
+      }
+    }
+
+    .movies__poster {
+      display: block;
+      width: 110px;
+    }
   }
 }

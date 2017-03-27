@@ -4,4 +4,10 @@
 @import 'search';
 @import 'header';
 @import 'list';
+@import 'moreinfo';
 @import 'toolbar';
+
+.movies__wrapper {
+  overflow-x: hidden;
+  width: 100%;
+}
