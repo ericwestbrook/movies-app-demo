@@ -12,7 +12,6 @@ class App extends React.Component {
     fetch('/data/movies.json')
       .then(response => response.json())
       .then(json => {
-        console.log(json.movies);
         this.setState({
           movies: json.movies
         })
