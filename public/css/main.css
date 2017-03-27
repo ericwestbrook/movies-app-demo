@@ -127,7 +127,8 @@ p {
       transform: rotate(180deg); }
   .movies__header__content {
     left: 30px;
-    position: relative; }
+    position: relative;
+    width: calc(100% - 30px); }
 
 .movies__list {
   min-height: 100vh;

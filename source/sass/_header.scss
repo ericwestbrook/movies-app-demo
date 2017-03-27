@@ -28,5 +28,6 @@
   &__content {
     left: $padding * 1.5;
     position: relative;
+    width: calc(100% - #{$padding * 1.5});
   }
 }
