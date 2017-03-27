@@ -1,0 +1,27 @@
+@import 'config';
+
+.movies__header {
+  background: $color-pink;
+  height: $header-height;
+  left: 0;
+  padding: $padding;
+  position: fixed;
+  top: #{$search-height + ($padding * 2)};
+  width: calc(100% - #{$padding * 2});
+  z-index: 2;
+
+  a {
+    display: block;
+    left: $padding;
+    position: absolute;
+
+    > img {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    left: $padding * 2;
+    position: relative;
+  }
+}

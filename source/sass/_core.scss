@@ -1,0 +1,14 @@
+@import 'config';
+
+body {
+  background: $color-black-2;
+  color: $text-gray;
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+.clear-float {
+  clear: both;
+  float: none;
+}

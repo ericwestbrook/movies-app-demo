@@ -1,0 +1,22 @@
+.movies__list {
+  // background: red;
+  min-height: 100vh;
+  padding-top: #{($padding * 4) + $search-height + $header-height};
+  position: relative;
+
+  &__header {
+    padding: $padding;
+    text-transform: uppercase;
+
+    &--left {
+      float: left;
+    }
+    &--right {
+      float: right;
+    }
+  }
+
+  .movies__poster {
+    display: none;
+  }
+}

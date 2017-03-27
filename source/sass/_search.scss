@@ -1,0 +1,24 @@
+@import 'config';
+
+.movies__search {
+  background: $color-black-2;
+  height: $search-height;
+  left: 0;
+  padding: $padding;
+  position: fixed;
+  top: 0;
+  width: calc(100% - #{$padding * 2});
+  z-index: 2;
+
+  input {
+    background: $color-gray-3;
+    border: 1px solid $border-gray;
+    border-radius: $borders;
+    color: $text-gray;
+    display: block;
+    font-size: 24px;
+    height: calc(100% - 2px);
+    padding: 0 #{$padding / 2};
+    width: calc(100% - #{$padding + 2});
+  }
+}
