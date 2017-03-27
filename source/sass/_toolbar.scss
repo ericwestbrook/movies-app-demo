@@ -1,0 +1,38 @@
+@import 'config';
+
+.movies__toolbar {
+  background: $color-black-1;
+  bottom: 0;
+  height: $search-height;
+  left: 0;
+  padding: $padding;
+  position: fixed;
+  width: calc(100% - #{$padding / 2});
+
+  .dropdown {
+    &__wrapper {
+
+      &.false .dropdown__options {
+        opacity: 0;
+      }
+    }
+
+    &__options {
+      background: $color-gray-3;
+      border-radius: $borders;
+      bottom: #{$header-height + $padding};
+      box-shadow: 0 0 60px $color-black-1;
+      padding: $padding 0;
+      position: absolute;
+      transition: opacity .5s;
+
+      li {
+        padding: #{$padding / 2} $padding;
+
+        &:hover {
+          background-color: $color-pink;
+        }
+      }
+    }
+  }
+}

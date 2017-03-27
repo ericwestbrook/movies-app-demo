@@ -4,6 +4,15 @@
   padding-top: #{($padding * 4) + $search-height + $header-height};
   position: relative;
 
+  ul {
+    list-style-type: none;
+    padding: 0 0 #{$header-height + ($padding * 2)} 0;
+  }
+
+  &__wrapper {
+    background: $color-black-2;
+  }
+
   &__header {
     padding: $padding;
     text-transform: uppercase;
@@ -13,6 +22,58 @@
     }
     &--right {
       float: right;
+    }
+  }
+
+  &__item {
+    border-bottom: 2px solid $color-black-2;
+    height: $header-height;
+    padding: $padding;
+    position: relative;
+    @include bg-gradient($color-deep-blue-1, $color-deep-blue-2);
+
+    &__love {
+      left: $padding;
+      position: absolute;
+      top: #{($header-height / 2) + ($padding / 2)};
+
+      .path {
+        fill: $color-white;
+      }
+
+      .line {
+        stroke: blue;
+        stroke-width: 10;
+        opacity: 1;
+      }
+    }
+
+    &__details {
+      left: $padding * 2;
+      position: relative;
+      width: calc(100% - #{$padding * 4});
+
+      h5 span {
+        margin-right: $padding / 2;
+      }
+    }
+
+    &__more-info {
+      position: absolute;
+      right: $padding;
+      top: #{($header-height / 2) + ($padding / 2)};
+
+      .line {
+        fill: $color-pink;
+      }
+    }
+
+    &:nth-child(even) {
+      @include bg-gradient($color-gray-3, $color-gray-4);
+
+      .movies__list__item__more-info .line {
+        fill: $color-black-2;
+      }
     }
   }
 

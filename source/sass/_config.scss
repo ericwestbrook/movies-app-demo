@@ -1,9 +1,13 @@
+$color-white: #ffffff;
 $color-black-1: #231e1e;
 $color-black-2: #1d1e1f;
 $color-gray-1: #c2bfbf;
 $color-gray-2: #676464;
 $color-gray-3: #3d4551;
+$color-gray-4: #3a414d;
 $color-pink: #de0744;
+$color-deep-blue-1: #21252c;
+$color-deep-blue-2: #1b1e23;
 
 $text-gray: $color-gray-1;
 $border-gray: $color-gray-2;
@@ -13,3 +17,8 @@ $borders: 6px;
 
 $search-height: 80px;
 $header-height: 140px;
+
+@mixin bg-gradient($color-1, $color-2) {
+  background: linear-gradient(to bottom, $color-1 0%, $color-2 100%);
+
+}
