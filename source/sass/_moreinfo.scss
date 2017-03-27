@@ -92,4 +92,10 @@
       fill: $color-pink;
     }
   }
+
+  @media (min-width: $desktop) {
+    &__content .movies__poster {
+      width: 400px;
+    }
+  }
 }
